@@ -22,3 +22,13 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+
+
+import { defineConfig } from 'vite';
+
+export default defineConfig({
+  build: {
+    // Increase the limit to 1600kB or higher as needed
+    chunkSizeWarningLimit: 1600,
+  },
+});
